@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Blog // My New Hugo Site</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.75.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://github.com/guangsizhongbin/guangsizhongbin.githubls.git/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Blog"/>
+<meta name="twitter:description" content="[toc]
+Pre-installation download   ios  wget http://mirrors.163.com/archlinux/iso/2020.06.01/archlinux-2020.06.01-x86_64.iso    sha1sums  wget http://mirrors.163.com/archlinux/iso/2020.06.01/sha1sums.txt  check  sha1sum archlinux -c sha1sums.txt    copy  sudo fdisk -l dd bs=4M if=path/archlinux.iso of=/dev/sdx status=progress oflag=sync  Update the system clock timedatectl set-ntp true
+Partition the disks  fidsk -l cfdisk xxx format  Boot: mkfs.fat -F32 /dev/sdx_Boot Root: mkfs.ext4 /dev/sdx_Root   mount  mount /dev/sdx_Root /mnt mkdir /mnt/boot mount /dev/sdx_Boot /mnt/boot    Installation connect to the internet  wifi-menu select the wifi check the wifi  ping baidu."/>
+
+    <meta property="og:title" content="Blog" />
+<meta property="og:description" content="[toc]
+Pre-installation download   ios  wget http://mirrors.163.com/archlinux/iso/2020.06.01/archlinux-2020.06.01-x86_64.iso    sha1sums  wget http://mirrors.163.com/archlinux/iso/2020.06.01/sha1sums.txt  check  sha1sum archlinux -c sha1sums.txt    copy  sudo fdisk -l dd bs=4M if=path/archlinux.iso of=/dev/sdx status=progress oflag=sync  Update the system clock timedatectl set-ntp true
+Partition the disks  fidsk -l cfdisk xxx format  Boot: mkfs.fat -F32 /dev/sdx_Boot Root: mkfs.ext4 /dev/sdx_Root   mount  mount /dev/sdx_Root /mnt mkdir /mnt/boot mount /dev/sdx_Boot /mnt/boot    Installation connect to the internet  wifi-menu select the wifi check the wifi  ping baidu." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://github.com/guangsizhongbin/guangsizhongbin.githubls.git/post/blog/" />
+<meta property="article:published_time" content="2020-09-21T16:20:08+08:00" />
+<meta property="article:modified_time" content="2020-09-21T16:20:08+08:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://github.com/guangsizhongbin/guangsizhongbin.githubls.git"><img class="app-header-avatar" src="/guangsizhongbin/guangsizhongbin.githubls.git/avatar.jpg" alt="John Doe" /></a>
+      <h1>My New Hugo Site</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+      <div class="app-header-social">
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Blog</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Sep 21, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          4 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      <p>[toc]</p>
+<h1 id="pre-installation">Pre-installation</h1>
+<h2 id="download">download</h2>
+<ul>
+<li>
+<h2 id="ios">ios</h2>
+<ul>
+<li>wget <a href="http://mirrors.163.com/archlinux/iso/2020.06.01/archlinux-2020.06.01-x86_64.iso">http://mirrors.163.com/archlinux/iso/2020.06.01/archlinux-2020.06.01-x86_64.iso</a></li>
+</ul>
+</li>
+<li>
+<h2 id="sha1sums">sha1sums</h2>
+<ul>
+<li>wget <a href="http://mirrors.163.com/archlinux/iso/2020.06.01/sha1sums.txt">http://mirrors.163.com/archlinux/iso/2020.06.01/sha1sums.txt</a></li>
+<li>
+<h2 id="check">check</h2>
+</li>
+<li>sha1sum archlinux -c sha1sums.txt</li>
+</ul>
+</li>
+</ul>
+<h2 id="copy">copy</h2>
+<ul>
+<li>sudo fdisk -l</li>
+<li>dd bs=4M if=path/archlinux.iso of=/dev/sdx status=progress oflag=sync</li>
+</ul>
+<h3 id="update-the-system-clock">Update the system clock</h3>
+<p>timedatectl set-ntp true</p>
+<h3 id="partition-the-disks">Partition the disks</h3>
+<ol>
+<li>fidsk -l</li>
+<li>cfdisk xxx</li>
+<li>format
+<ul>
+<li>Boot: mkfs.fat -F32 /dev/sdx_Boot</li>
+<li>Root: mkfs.ext4 /dev/sdx_Root</li>
+</ul>
+</li>
+<li>mount
+<ul>
+<li>mount /dev/sdx_Root /mnt</li>
+<li>mkdir /mnt/boot</li>
+<li>mount /dev/sdx_Boot /mnt/boot</li>
+</ul>
+</li>
+</ol>
+<h1 id="installation">Installation</h1>
+<h2 id="connect-to-the-internet">connect to the internet</h2>
+<ol>
+<li>wifi-menu</li>
+<li>select the wifi</li>
+<li>check the wifi
+<ul>
+<li>ping baidu.com</li>
+</ul>
+</li>
+</ol>
+<h2 id="select-the-mirrors">Select the mirrors</h2>
+<p>vim /etc/pacman.d/mirrorlist</p>
+<h2 id="install-essential-packages">Install essential packages</h2>
+<p>pacstrap /mnt base linux linux-firmware vim sudo</p>
+<h1 id="configure-the-system">configure the system</h1>
+<h2 id="fstab">Fstab</h2>
+<p>genfstab -L /mnt &raquo; /mnt/etc/fstab</p>
+<p><code>-L</code> define by labels</p>
+<h2 id="chroot">chroot</h2>
+<p>arch-chroot /mnt</p>
+<h2 id="time-zone">Time zone</h2>
+<ol>
+<li>Set the time zone
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</li>
+<li>Run hwclock
+hwclock &ndash;systohc</li>
+</ol>
+<h2 id="localization">Localization</h2>
+<ol>
+<li>Uncomment <code>en_US.UTF-8 UTF-8</code> in <code>/etc/locale.gen</code> and generate it with <code>locale-gen</code></li>
+<li>Create the <code>/etc/locale.conf</code> file, and set the <code>LANG</code> variable accordingly:<code>LANG=&quot;en_US.UTF-8&quot;</code></li>
+</ol>
+<h2 id="network-configuration">Network configuration</h2>
+<ol>
+<li>Create the hostname file in <code>/etc/hostname</code>
+<pre><code>myhostname
+</code></pre><p>``</p>
+</li>
+<li>Add matching entries to <code>/etc/hosts</code>
+<pre><code>127.0.0.1	localhost
+::1			localhost
+127.0.1.1	myhostname.localdomain	myhostname
+</code></pre><p>``</p>
+</li>
+</ol>
+<h2 id="root-password">Root password</h2>
+<p>passwd</p>
+<h2 id="boot-loader">Boot loader</h2>
+<ol>
+<li>Install Boot loader packages
+pacman -S os-prober ntfs-3g grub efibootmgr</li>
+<li>grub-install
+grub-install &ndash;target=x86_64-efi &ndash;efi-directory=/boot &ndash;bootloader-id=grub</li>
+<li>grub-mkconfig
+grub-mkconfig -o /boot/grub/grub.cfg</li>
+</ol>
+<h2 id="intel-ucode">Intel-ucode</h2>
+<p>pacman -S intel-ucode</p>
+<h2 id="wifi-menu">wifi-menu</h2>
+<p>pacman -S iw wpa_supplicant dialog netctl</p>
+<h2 id="exit">exit</h2>
+<h2 id="reboot">Reboot</h2>
+<ol>
+<li>umount /mnt/boot</li>
+<li>umount /mnt</li>
+<li>reboot</li>
+</ol>
+<h1 id="post-installation">Post-installation</h1>
+<h2 id="kde-plasma">KDE Plasma</h2>
+<ol>
+<li>install Xorg
+sudo pacman -S xorg</li>
+<li>KDE applications
+sudo pacman -S plasma konsole dolphin</li>
+<li>systemctl enable
+sudo systemctl enable NetworkManager
+sudo systemctl enable sddm</li>
+</ol>
+<h2 id="add-a-user-to-wheel-group">Add a user to Wheel group</h2>
+<ol>
+<li>add User
+useradd -m -G wheel -s /bin/bash users</li>
+<li><code>visudo</code>
+uncomment <code>#</code>#%wheel ALL=(ALL)</li>
+<li>passwd
+passwd users</li>
+</ol>
+<h2 id="reboot-1">Reboot</h2>
+<h1 id="software-installtion">software Installtion</h1>
+<h2 id="archlinxcn">archlinxcn</h2>
+<ol>
+<li>vim <code>/etc/pacman.conf</code></li>
+</ol>
+<pre><code>[archlinuxcn]
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+Server = https://mirrors.cloud.tencent.com/archlinuxcn/$arch
+Server = https://mirrors.zju.edu.cn/archlinuxcn/$arch
+Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
+</code></pre><ol start="2">
+<li>sudo pacman -S archlinuxcn-keyring</li>
+</ol>
+<h2 id="git">git</h2>
+<ol>
+<li>download</li>
+</ol>
+<ul>
+<li>sudo pacman -S git</li>
+</ul>
+<ol start="2">
+<li>config
+<pre><code>git config --global user.name feng
+git config --global user.email guangsizhongbin@gmail.com
+</code></pre><p>``</p>
+</li>
+<li>SSH key
+<pre><code>ssh-keygen -t rsa -C &quot;guangsizhongbin@gmail.com&quot;
+</code></pre><p>``</p>
+</li>
+<li>test connect</li>
+</ol>
+<ul>
+<li>ssh -T <a href="mailto:git@github.com">git@github.com</a>
+<img src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192918.png" alt=""></li>
+</ul>
+<ol start="4">
+<li>upload id_ras.pub to github
+<img src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192435.png" alt=""></li>
+</ol>
+<h2 id="yay">yay</h2>
+<ol>
+<li>git clone <a href="https://aur.archlinux.org/yay.git">https://aur.archlinux.org/yay.git</a></li>
+<li>cd yay</li>
+<li>sudo pacman -S base-devel</li>
+<li>makepkg -si</li>
+</ol>
+<h2 id="font">font</h2>
+<ol>
+<li>sudo pacman -S nerd-fonts-complete</li>
+<li>sudo pacman -S wqy-zenhei wqy-bitmapfont wqy-microhei ttf-wps-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts</li>
+</ol>
+<h2 id="trojan">trojan</h2>
+<p>sudo pacman -S trojan</p>
+<h2 id="privoxy">privoxy</h2>
+<p>sudo pacman -S privoxy</p>
+<ul>
+<li><code>/etc/privoxy</code>
+<img src="https://img.fengqigang.cn//img/20200912185318.png" alt=""></li>
+</ul>
+<h2 id="joplin">joplin</h2>
+<p>yay joplin</p>
+<h3 id="support-nvim">support nvim</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200618_2115_1592486139.png" alt=""></p>
+<h2 id="anki">anki</h2>
+<p>sudo pacman -S anki</p>
+<h3 id="add-on">add-on</h3>
+<ol>
+<li>AwesomeTTS (Google Cloud Text-to-Speech) [unofficial] <code>814349176</code></li>
+<li>Fast Word Query: Multi-threaded queries for words from local or web dictionaries <code>1807206748</code></li>
+<li>Image Occlusion Enhanced for Anki 2.1 (alpha) <code>1374772155</code></li>
+<li>ReviewHeatmap <code>723520343</code></li>
+<li>Browser: Table/Editor side-by-side <code>831846358</code></li>
+<li>Beautify Anki (Material design , Deck Background and icon ) <code>1150874988</code></li>
+<li>Batch Editing <code>291119185</code></li>
+<li>editor: apply font color, background color, custom class, custom style <code>1899278645</code>
+9.Edit Field During Review <code>1020366288</code></li>
+</ol>
+<h2 id="gpu">GPU</h2>
+<p>sudo pacman -S linux-headers
+sudo pacman -S nvidia bbswitch optimus-manager-qt-kde
+systemctl enable optimus-manager.service</p>
+<h2 id="kde-connect">kde connect</h2>
+<p>sudo pacman -S kdeconnect</p>
+<h2 id="screen-shot">screen-shot</h2>
+<ol>
+<li>yay flameshot (community)</li>
+</ol>
+<ul>
+<li>shortcuts(<code>flameshot gui</code>)
+<img src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611_1855_1591872921.png" alt=""></li>
+</ul>
+<ol start="2">
+<li>
+<p>sudo pacman -S peek
+<img src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611190005.png" alt=""></p>
+</li>
+<li>
+<p>yay picgo-appimage</p>
+</li>
+</ol>
+<p>LTAI4G3cxsQocwAx3TZ39t7j
+3Z3fLk4eISH8h8qY1peEVMYs2TQrM0</p>
+<ul>
+<li>xclip
+sudo pacman -S xclip
+<img src="https://img.fengqigang.cn//img/20200912184425.png" alt=""></li>
+</ul>
+<h2 id="widget">widget</h2>
+<ul>
+<li>Event Calender</li>
+<li>Network speed</li>
+</ul>
+<h2 id="music">music</h2>
+<p>sudo pacman -S netease-cloud-music</p>
+<h2 id="googlechrome">googlechrome</h2>
+<p>sudo pacman -S google-chrome</p>
+<h3 id="plugin">plugin</h3>
+<ul>
+<li>Dark Reader</li>
+<li>沙拉查词</li>
+<li>AdBlock</li>
+<li>Vimium</li>
+<li>infinity</li>
+<li>octotree</li>
+<li>language Tool</li>
+<li>Proxy SwitchOmega</li>
+</ul>
+<p><code>https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt</code></p>
+<ul>
+<li>SimpleExManage</li>
+</ul>
+<h2 id="video">video</h2>
+<p>sudo pacman -S mpv
+sudo pacman -S vlc</p>
+<h2 id="filezilla">filezilla</h2>
+<p>yay filezilla</p>
+<h2 id="neovim">neovim</h2>
+<p>sudo pacman -S neovim</p>
+<ul>
+<li>
+<p>plugin
+sudo pacman -S ctags</p>
+</li>
+<li>
+<p>clipboard
+sudo pacman -S xclip</p>
+</li>
+<li>
+<p>node.js
+sudo npm install -g neovim</p>
+</li>
+<li>
+<p>python
+pip install neovim</p>
+</li>
+</ul>
+<p>sudo pacman -S ccls</p>
+<h2 id="fcitx">fcitx</h2>
+<ol>
+<li>download</li>
+</ol>
+<p>sudo pacman -S fcitx fctix-im kcm-fcitx</p>
+<ol start="2">
+<li>vim <code>~/.xprofile</code></li>
+</ol>
+<pre><code>export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=&quot;@im=fcitx&quot;
+</code></pre><h2 id="download-1">download</h2>
+<ol>
+<li>
+<p>you-get
+sudo pacman -S python-pip
+sudo pip3 install you-get</p>
+</li>
+<li>
+<p>youtube-dl
+sudo pip3 install youtube-dl</p>
+</li>
+</ol>
+<h3 id="aria2--youtube-dl">aria2 + youtube-dl</h3>
+<p>youtube-dl -f 22 <a href="https://www.youtube.com/playlist">https://www.youtube.com/playlist</a>?list=PLFx-dS8yeeGPPQAdpV6hiAqgi4Qzohcmk &ndash;external-downloader aria2c &ndash;external-downloader-args &ldquo;-x 16  -k 1M&rdquo;</p>
+<ol start="3">
+<li>wget
+sudo pacman -S wget</li>
+</ol>
+<pre><code>wget -c &quot;www.baidu.com&quot; -O baidu.index.html
+</code></pre><ol start="4">
+<li>aria2
+sudo pacman -S aria2</li>
+</ol>
+<h2 id="zsh">zsh</h2>
+<ol>
+<li>
+<p>zsh
+sudo pacman -S zsh</p>
+</li>
+<li>
+<p>export</p>
+</li>
+<li>
+<p>oh-my-zsh
+<code>export https_proxy=&quot;http://0.0.0.0:8189&quot;</code></p>
+</li>
+</ol>
+<p><code>sh -c &quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</code></p>
+<ol start="4">
+<li>plugin</li>
+</ol>
+<ul>
+<li>zsh-autosuggestions
+<code>git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions</code></li>
+</ul>
+<h2 id="bluetooth">bluetooth</h2>
+<p>sudo pacman -S  pulseaudio-alsa pulseaudio-bluetooth bluez bluez-libs bluez-utils
+yay -S bluez-firmware</p>
+<p>systemctl enable bluetooth
+systemctl start bluetooth</p>
+<h2 id="pdf">pdf</h2>
+<p>yay Okular</p>
+<h2 id="dict">dict</h2>
+<p>sudo pacman -S goldendict</p>
+<h2 id="clion">Clion</h2>
+<p>suod pacman -S clion clion-jre clion-cmake clion-gdb clion-lidb</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
