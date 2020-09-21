@@ -1,27 +1,25 @@
 <!doctype html>
 <html lang="en-us">
   <head>
-    <title>Blog // Xiaonan&#39;s Blog</title>
+    <title>Archlinux Installation // Xiaonan&#39;s Blog</title>
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.75.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="fengxiaonan" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="https://guangsizhongbin.github.io/css/main.min.1d410c4f3be87745e986ad5991a8e587e522eb70056c9668a64694092dc27997.css" />
+    <link rel="stylesheet" href="https://github.com/guangsizhongbin/guangsizhongbin.githubls.git/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
 
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Blog"/>
-<meta name="twitter:description" content="[toc]
-Pre-installation download   ios  wget http://mirrors.163.com/archlinux/iso/2020.06.01/archlinux-2020.06.01-x86_64.iso    sha1sums  wget http://mirrors.163.com/archlinux/iso/2020.06.01/sha1sums.txt  check  sha1sum archlinux -c sha1sums.txt    copy  sudo fdisk -l dd bs=4M if=path/archlinux.iso of=/dev/sdx status=progress oflag=sync  Update the system clock timedatectl set-ntp true
-Partition the disks  fidsk -l cfdisk xxx format  Boot: mkfs.fat -F32 /dev/sdx_Boot Root: mkfs.ext4 /dev/sdx_Root   mount  mount /dev/sdx_Root /mnt mkdir /mnt/boot mount /dev/sdx_Boot /mnt/boot    Installation connect to the internet  wifi-menu select the wifi check the wifi  ping baidu."/>
+<meta name="twitter:title" content="Archlinux Installation"/>
+<meta name="twitter:description" content="Pre-installation download ios download
+copy  sudo fdisk -l dd bs=4M if=path/archlinux.iso of=/dev/sdx status=progress oflag=sync  Partition the disks  fidsk -l cfdisk xxx format  Boot: mkfs.fat -F32 /dev/sdx_Boot Root: mkfs.ext4 /dev/sdx_Root   mount  mount /dev/sdx_Root /mnt mkdir /mnt/boot mount /dev/sdx_Boot /mnt/boot    Installation connect to the internet  iwctl device list station scan station get-networks station connect xxxx quit  Update the system clock timedatectl set-ntp true"/>
 
-    <meta property="og:title" content="Blog" />
-<meta property="og:description" content="[toc]
-Pre-installation download   ios  wget http://mirrors.163.com/archlinux/iso/2020.06.01/archlinux-2020.06.01-x86_64.iso    sha1sums  wget http://mirrors.163.com/archlinux/iso/2020.06.01/sha1sums.txt  check  sha1sum archlinux -c sha1sums.txt    copy  sudo fdisk -l dd bs=4M if=path/archlinux.iso of=/dev/sdx status=progress oflag=sync  Update the system clock timedatectl set-ntp true
-Partition the disks  fidsk -l cfdisk xxx format  Boot: mkfs.fat -F32 /dev/sdx_Boot Root: mkfs.ext4 /dev/sdx_Root   mount  mount /dev/sdx_Root /mnt mkdir /mnt/boot mount /dev/sdx_Boot /mnt/boot    Installation connect to the internet  wifi-menu select the wifi check the wifi  ping baidu." />
+    <meta property="og:title" content="Archlinux Installation" />
+<meta property="og:description" content="Pre-installation download ios download
+copy  sudo fdisk -l dd bs=4M if=path/archlinux.iso of=/dev/sdx status=progress oflag=sync  Partition the disks  fidsk -l cfdisk xxx format  Boot: mkfs.fat -F32 /dev/sdx_Boot Root: mkfs.ext4 /dev/sdx_Root   mount  mount /dev/sdx_Root /mnt mkdir /mnt/boot mount /dev/sdx_Boot /mnt/boot    Installation connect to the internet  iwctl device list station scan station get-networks station connect xxxx quit  Update the system clock timedatectl set-ntp true" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://guangsizhongbin.github.io/post/blog/" />
+<meta property="og:url" content="https://github.com/guangsizhongbin/guangsizhongbin.githubls.git/post/blog/" />
 <meta property="article:published_time" content="2020-09-21T16:20:08+08:00" />
 <meta property="article:modified_time" content="2020-09-21T16:20:08+08:00" />
 
@@ -29,9 +27,9 @@ Partition the disks  fidsk -l cfdisk xxx format  Boot: mkfs.fat -F32 /dev/sdx_Bo
   </head>
   <body>
     <header class="app-header">
-      <a href="https://guangsizhongbin.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="fengxiaonan" /></a>
+      <a href="https://github.com/guangsizhongbin/guangsizhongbin.githubls.git"><img class="app-header-avatar" src="https://img.fengqigang.cn//img/-20ca465bc6ca77c1.jpg" alt="fengxiaonan" /></a>
       <h1>Xiaonan&#39;s Blog</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+      <p>KISS. Keep It Simple, Stupid</p>
       <div class="app-header-social">
         
           <a target="_blank" href="https://github.com/guangsizhongbin" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
@@ -45,7 +43,7 @@ Partition the disks  fidsk -l cfdisk xxx format  Boot: mkfs.fat -F32 /dev/sdx_Bo
       
   <article class="post">
     <header class="post-header">
-      <h1 class ="post-title">Blog</h1>
+      <h1 class ="post-title">Archlinux Installation</h1>
       <div class="post-meta">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
@@ -59,38 +57,19 @@ Partition the disks  fidsk -l cfdisk xxx format  Boot: mkfs.fat -F32 /dev/sdx_Bo
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          4 min read
+          3 min read
         </div></div>
     </header>
     <div class="post-content">
-      <p>[toc]</p>
-<h1 id="pre-installation">Pre-installation</h1>
+      <h1 id="pre-installation">Pre-installation</h1>
 <h2 id="download">download</h2>
-<ul>
-<li>
-<h2 id="ios">ios</h2>
-<ul>
-<li>wget <a href="http://mirrors.163.com/archlinux/iso/2020.06.01/archlinux-2020.06.01-x86_64.iso">http://mirrors.163.com/archlinux/iso/2020.06.01/archlinux-2020.06.01-x86_64.iso</a></li>
-</ul>
-</li>
-<li>
-<h2 id="sha1sums">sha1sums</h2>
-<ul>
-<li>wget <a href="http://mirrors.163.com/archlinux/iso/2020.06.01/sha1sums.txt">http://mirrors.163.com/archlinux/iso/2020.06.01/sha1sums.txt</a></li>
-<li>
-<h2 id="check">check</h2>
-</li>
-<li>sha1sum archlinux -c sha1sums.txt</li>
-</ul>
-</li>
-</ul>
-<h2 id="copy">copy</h2>
-<ul>
+<h3 id="ios">ios</h3>
+<p><a href="https://www.archlinux.org/download/">download</a></p>
+<h3 id="copy">copy</h3>
+<ol>
 <li>sudo fdisk -l</li>
 <li>dd bs=4M if=path/archlinux.iso of=/dev/sdx status=progress oflag=sync</li>
-</ul>
-<h3 id="update-the-system-clock">Update the system clock</h3>
-<p>timedatectl set-ntp true</p>
+</ol>
 <h3 id="partition-the-disks">Partition the disks</h3>
 <ol>
 <li>fidsk -l</li>
@@ -112,14 +91,15 @@ Partition the disks  fidsk -l cfdisk xxx format  Boot: mkfs.fat -F32 /dev/sdx_Bo
 <h1 id="installation">Installation</h1>
 <h2 id="connect-to-the-internet">connect to the internet</h2>
 <ol>
-<li>wifi-menu</li>
-<li>select the wifi</li>
-<li>check the wifi
-<ul>
-<li>ping baidu.com</li>
-</ul>
-</li>
+<li>iwctl</li>
+<li>device list</li>
+<li>station <!-- raw HTML omitted --> scan</li>
+<li>station <!-- raw HTML omitted --> get-networks</li>
+<li>station <!-- raw HTML omitted --> connect xxxx</li>
+<li>quit</li>
 </ol>
+<h2 id="update-the-system-clock">Update the system clock</h2>
+<p>timedatectl set-ntp true</p>
 <h2 id="select-the-mirrors">Select the mirrors</h2>
 <p>vim /etc/pacman.d/mirrorlist</p>
 <h2 id="install-essential-packages">Install essential packages</h2>
@@ -132,40 +112,50 @@ Partition the disks  fidsk -l cfdisk xxx format  Boot: mkfs.fat -F32 /dev/sdx_Bo
 <p>arch-chroot /mnt</p>
 <h2 id="time-zone">Time zone</h2>
 <ol>
-<li>Set the time zone
-ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</li>
-<li>Run hwclock
-hwclock &ndash;systohc</li>
+<li>
+<p>Set the time zone
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</p>
+</li>
+<li>
+<p>Run hwclock
+hwclock &ndash;systohc</p>
+</li>
 </ol>
 <h2 id="localization">Localization</h2>
 <ol>
-<li>Uncomment <code>en_US.UTF-8 UTF-8</code> in <code>/etc/locale.gen</code> and generate it with <code>locale-gen</code></li>
-<li>Create the <code>/etc/locale.conf</code> file, and set the <code>LANG</code> variable accordingly:<code>LANG=&quot;en_US.UTF-8&quot;</code></li>
+<li>
+<p>Uncomment <code>en_US.UTF-8 UTF-8</code> in <code>/etc/locale.gen</code> and generate it with <code>locale-gen</code></p>
+</li>
+<li>
+<p>Create the <code>/etc/locale.conf</code> file, and set the <code>LANG</code> variable accordingly:<code>LANG=&quot;en_US.UTF-8&quot;</code></p>
+</li>
 </ol>
 <h2 id="network-configuration">Network configuration</h2>
 <ol>
-<li>Create the hostname file in <code>/etc/hostname</code>
+<li>Create the hostname file in <code>/etc/hostname</code></li>
+</ol>
 <pre><code>myhostname
-</code></pre><p>``</p>
-</li>
-<li>Add matching entries to <code>/etc/hosts</code>
+</code></pre><ol start="2">
+<li>Add matching entries to <code>/etc/hosts</code></li>
+</ol>
 <pre><code>127.0.0.1	localhost
 ::1			localhost
 127.0.1.1	myhostname.localdomain	myhostname
-</code></pre><p>``</p>
-</li>
-</ol>
-<h2 id="root-password">Root password</h2>
+</code></pre><h2 id="root-password">Root password</h2>
 <p>passwd</p>
 <h2 id="boot-loader">Boot loader</h2>
 <ol>
-<li>Install Boot loader packages
-pacman -S os-prober ntfs-3g grub efibootmgr</li>
-<li>grub-install
-grub-install &ndash;target=x86_64-efi &ndash;efi-directory=/boot &ndash;bootloader-id=grub</li>
-<li>grub-mkconfig
-grub-mkconfig -o /boot/grub/grub.cfg</li>
+<li>Install Boot loader packages</li>
 </ol>
+<p>pacman -S os-prober ntfs-3g grub efibootmgr</p>
+<ol start="2">
+<li>grub-install</li>
+</ol>
+<p>grub-install &ndash;target=x86_64-efi &ndash;efi-directory=/boot &ndash;bootloader-id=grub</p>
+<ol start="3">
+<li>grub-mkconfig</li>
+</ol>
+<p>grub-mkconfig -o /boot/grub/grub.cfg</p>
 <h2 id="intel-ucode">Intel-ucode</h2>
 <p>pacman -S intel-ucode</p>
 <h2 id="wifi-menu">wifi-menu</h2>
@@ -180,23 +170,31 @@ grub-mkconfig -o /boot/grub/grub.cfg</li>
 <h1 id="post-installation">Post-installation</h1>
 <h2 id="kde-plasma">KDE Plasma</h2>
 <ol>
-<li>install Xorg
-sudo pacman -S xorg</li>
-<li>KDE applications
-sudo pacman -S plasma konsole dolphin</li>
-<li>systemctl enable
-sudo systemctl enable NetworkManager
-sudo systemctl enable sddm</li>
+<li>install Xorg</li>
 </ol>
+<p>sudo pacman -S xorg</p>
+<ol start="2">
+<li>KDE applications</li>
+</ol>
+<p>sudo pacman -S plasma konsole dolphin</p>
+<ol start="5">
+<li>systemctl enable</li>
+</ol>
+<p>sudo systemctl enable NetworkManager
+sudo systemctl enable sddm</p>
 <h2 id="add-a-user-to-wheel-group">Add a user to Wheel group</h2>
 <ol>
-<li>add User
-useradd -m -G wheel -s /bin/bash users</li>
-<li><code>visudo</code>
-uncomment <code>#</code>#%wheel ALL=(ALL)</li>
-<li>passwd
-passwd users</li>
+<li>add User</li>
 </ol>
+<p>useradd -m -G wheel -s /bin/bash xxx</p>
+<ol start="2">
+<li><code>visudo</code></li>
+</ol>
+<p>uncomment <code>#</code>#%wheel ALL=(ALL)</p>
+<ol start="3">
+<li>passwd</li>
+</ol>
+<p>passwd xxx</p>
 <h2 id="reboot-1">Reboot</h2>
 <h1 id="software-installtion">software Installtion</h1>
 <h2 id="archlinxcn">archlinxcn</h2>
@@ -215,25 +213,21 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 <ol>
 <li>download</li>
 </ol>
-<ul>
-<li>sudo pacman -S git</li>
-</ul>
+<p>sudo pacman -S git</p>
 <ol start="2">
-<li>config
+<li>config</li>
+</ol>
 <pre><code>git config --global user.name feng
 git config --global user.email guangsizhongbin@gmail.com
-</code></pre><p>``</p>
-</li>
-<li>SSH key
+</code></pre><ol start="3">
+<li>SSH key</li>
+</ol>
 <pre><code>ssh-keygen -t rsa -C &quot;guangsizhongbin@gmail.com&quot;
-</code></pre><p>``</p>
-</li>
+</code></pre><ol start="4">
 <li>test connect</li>
 </ol>
-<ul>
-<li>ssh -T <a href="mailto:git@github.com">git@github.com</a>
-<img src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192918.png" alt=""></li>
-</ul>
+<p>ssh -T <a href="mailto:git@github.com">git@github.com</a>
+<img src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192918.png" alt=""></p>
 <ol start="4">
 <li>upload id_ras.pub to github
 <img src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192435.png" alt=""></li>
