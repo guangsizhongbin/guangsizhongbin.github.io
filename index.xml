@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xiaonan&#39;s Blog</title>
-    <link>https://github.com/guangsizhongbin/guangsizhongbin.github.git/</link>
+    <link>https://guangsizhongbin.github.io/</link>
     <description>Recent content on Xiaonan&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Sep 2020 16:20:08 +0800</lastBuildDate><atom:link href="https://github.com/guangsizhongbin/guangsizhongbin.github.git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Sep 2020 16:20:08 +0800</lastBuildDate><atom:link href="https://guangsizhongbin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Archlinux Installation</title>
-      <link>https://github.com/guangsizhongbin/guangsizhongbin.github.git/post/blog/</link>
+      <link>https://guangsizhongbin.github.io/post/blog/</link>
       <pubDate>Mon, 21 Sep 2020 16:20:08 +0800</pubDate>
       
-      <guid>https://github.com/guangsizhongbin/guangsizhongbin.github.git/post/blog/</guid>
+      <guid>https://guangsizhongbin.github.io/post/blog/</guid>
       <description>Pre-installation download ios download
 copy  sudo fdisk -l dd bs=4M if=path/archlinux.iso of=/dev/sdx status=progress oflag=sync  Partition the disks  fidsk -l cfdisk xxx format  Boot: mkfs.fat -F32 /dev/sdx_Boot Root: mkfs.ext4 /dev/sdx_Root   mount  mount /dev/sdx_Root /mnt mkdir /mnt/boot mount /dev/sdx_Boot /mnt/boot    Installation connect to the internet  iwctl device list station scan station get-networks station connect xxxx quit  Update the system clock timedatectl set-ntp true</description>
     </item>
