@@ -6,7 +6,33 @@
     <description>Recent content on Xiaonan&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Sep 2020 16:20:08 +0800</lastBuildDate><atom:link href="https://guangsizhongbin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Sep 2020 20:47:04 +0800</lastBuildDate><atom:link href="https://guangsizhongbin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>总结_重复包含</title>
+      <link>https://guangsizhongbin.github.io/post/%E6%80%BB%E7%BB%93_%E9%87%8D%E5%A4%8D%E5%8C%85%E5%90%AB/</link>
+      <pubDate>Thu, 24 Sep 2020 20:47:04 +0800</pubDate>
+      
+      <guid>https://guangsizhongbin.github.io/post/%E6%80%BB%E7%BB%93_%E9%87%8D%E5%A4%8D%E5%8C%85%E5%90%AB/</guid>
+      <description>重复包含问题的解决 1. 在main.cpp中只需要包含xxx.h即可，不需要包含xxx.cpp   原因分析：
+PS: 命令中没有提到&amp;quot;speak.h&amp;quot;文件(原因是:在&amp;quot;speak.cpp&amp;quot;中已经包含了&amp;quot;speak.h&amp;quot;)
+  2. 在xxx.h中，需要写上, 而xxx.cpp不需要写 #ifndef xxxxx #define xxxxx (...) #endif    原因分析：
+C++是采用独立编译，就是每个cpp单独编译成对应的.o文件，最后链接器再将多个.o文件链接成可执行程序。(防止同一个.o文件中包含多个相同的.h内容)
+  3. 使用&amp;rsquo;xxx.h&amp;rsquo;与&amp;rsquo;xxx.cpp&amp;rsquo;这种方式的时候，声明放在&amp;rsquo;xxx.h&amp;rsquo;中，定义放在&amp;rsquo;xxx.cpp&amp;rsquo;中   原因分析：
+C++是采用独立编译，就是每个cpp单独编译成对应的.o文件，最后链接器再将多个.o文件链接成可执行程序。(在将多个.o文件链接成可执行程序的时候，有可能会在不同的.o文件中含有相同的定义)
+  参考文章 注意头文件规则，避免链接错误：重复定义(multiple defination) 编译链接 C++
+Compiling Cpp</description>
+    </item>
+    
+    <item>
+      <title>两个长度分别为m和n的升序链表, 合并为长度为m&#43;n的一个降序链表，则最坏情况下的时间复杂度是？</title>
+      <link>https://guangsizhongbin.github.io/post/9-23/</link>
+      <pubDate>Wed, 23 Sep 2020 09:54:34 +0800</pubDate>
+      
+      <guid>https://guangsizhongbin.github.io/post/9-23/</guid>
+      <description> 升序链表转换成降序链表 采用的是头插法, ~翻转~
+#include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #define null 0 typedef struct LNode{ int data; struct LNode *next; } LNode, * Linklist; // A和B是提供了两个带头结点的升序链表，转换成一个降序链表C int reverse_link (Linklist &amp;amp;A, Linklist &amp;amp;B) { Linklist C = (Linklist)malloc(sizeof(LNode)); C-&amp;gt;next = null; Linklist pa = A-&amp;gt;next; Linklist pb = B-&amp;gt;next; while (pa &amp;amp;&amp;amp; pb) { if (pa-&amp;gt;data &amp;lt;= pb-&amp;gt;data) { pa-&amp;gt;next = C-&amp;gt;next; C-&amp;gt;next = pa; pa = A-&amp;gt;next; } else { pb-&amp;gt;next = C-&amp;gt;next; C-&amp;gt;next = pb; pb = B-&amp;gt;next; } } while (pa){ //A表非空，把剩余的元素头插入到C表中 pa-&amp;gt;next = C-&amp;gt;next; C-&amp;gt;next = pa; pa = A-&amp;gt;next; } while (pb){ //B表非空，把剩余的元素头插入到C表中 pb-&amp;gt;next = C-&amp;gt;next; C-&amp;gt;next = pb; pb= B-&amp;gt;next; } } int main(void) {}; </description>
+    </item>
+    
     <item>
       <title>Archlinux Installation</title>
       <link>https://guangsizhongbin.github.io/post/blog/</link>
