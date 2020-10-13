@@ -1,70 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <title>Archlinux Installation // Xiaonan&#39;s Blog</title>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.75.1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="fengxiaonan" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" href="https://guangsizhongbin.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
-
-    
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Archlinux Installation"/>
-<meta name="twitter:description" content="Pre-installation download ios download
-copy  sudo fdisk -l dd bs=4M if=path/archlinux.iso of=/dev/sdx status=progress oflag=sync  Partition the disks  fidsk -l cfdisk xxx format  Boot: mkfs.fat -F32 /dev/sdx_Boot Root: mkfs.ext4 /dev/sdx_Root   mount  mount /dev/sdx_Root /mnt mkdir /mnt/boot mount /dev/sdx_Boot /mnt/boot    Installation connect to the internet  iwctl device list station scan station get-networks station connect xxxx quit  Update the system clock timedatectl set-ntp true"/>
-
-    <meta property="og:title" content="Archlinux Installation" />
-<meta property="og:description" content="Pre-installation download ios download
-copy  sudo fdisk -l dd bs=4M if=path/archlinux.iso of=/dev/sdx status=progress oflag=sync  Partition the disks  fidsk -l cfdisk xxx format  Boot: mkfs.fat -F32 /dev/sdx_Boot Root: mkfs.ext4 /dev/sdx_Root   mount  mount /dev/sdx_Root /mnt mkdir /mnt/boot mount /dev/sdx_Boot /mnt/boot    Installation connect to the internet  iwctl device list station scan station get-networks station connect xxxx quit  Update the system clock timedatectl set-ntp true" />
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Archlinux Installation - Xiaonan&#39;s Blog</title><meta name="Description" content=""><meta property="og:title" content="Archlinux Installation" />
+<meta property="og:description" content="Pre-installation download ios download copy sudo fdisk -l dd bs=4M if=path/archlinux.iso of=/dev/sdx status=progress oflag=sync Partition the disks fidsk -l cfdisk xxx format Boot: mkfs.fat -F32 /dev/sdx_Boot Root: mkfs.ext4 /dev/sdx_Root mount mount /dev/sdx_Root /mnt mkdir /mnt/boot mount /dev/sdx_Boot /mnt/boot Installation connect to the internet iwctl device list station scan station get-networks station connect xxxx quit Update the system clock timedatectl set-ntp true Select the mirrors vim /etc/pacman.d/mirrorlist Install essential packages pacstrap" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://guangsizhongbin.github.io/post/%E6%80%BB%E7%BB%93_archlinux_installation/" />
 <meta property="article:published_time" content="2020-09-21T16:20:08+08:00" />
 <meta property="article:modified_time" content="2020-09-21T16:20:08+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Archlinux Installation"/>
+<meta name="twitter:description" content="Pre-installation download ios download copy sudo fdisk -l dd bs=4M if=path/archlinux.iso of=/dev/sdx status=progress oflag=sync Partition the disks fidsk -l cfdisk xxx format Boot: mkfs.fat -F32 /dev/sdx_Boot Root: mkfs.ext4 /dev/sdx_Root mount mount /dev/sdx_Root /mnt mkdir /mnt/boot mount /dev/sdx_Boot /mnt/boot Installation connect to the internet iwctl device list station scan station get-networks station connect xxxx quit Update the system clock timedatectl set-ntp true Select the mirrors vim /etc/pacman.d/mirrorlist Install essential packages pacstrap"/>
+<meta name="application-name" content="Xiaonan&#39;s Blog">
+<meta name="apple-mobile-web-app-title" content="Xiaonan&#39;s Blog"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://guangsizhongbin.github.io/post/%E6%80%BB%E7%BB%93_archlinux_installation/" /><link rel="next" href="https://guangsizhongbin.github.io/post/9-23/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Archlinux Installation",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/guangsizhongbin.github.io\/post\/%E6%80%BB%E7%BB%93_archlinux_installation\/"
+        },"genre": "post","wordcount":  655 ,
+        "url": "https:\/\/guangsizhongbin.github.io\/post\/%E6%80%BB%E7%BB%93_archlinux_installation\/","datePublished": "2020-09-21T16:20:08+08:00","dateModified": "2020-09-21T16:20:08+08:00","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
-
-  </head>
-  <body>
-    <header class="app-header">
-      <a href="https://guangsizhongbin.github.io"><img class="app-header-avatar" src="https://img.fengqigang.cn//img/-20ca465bc6ca77c1.jpg" alt="fengxiaonan" /></a>
-      <h1>Xiaonan&#39;s Blog</h1>
-      <p>KISS. Keep It Simple, Stupid</p>
-      <div class="app-header-social">
-        
-          <a target="_blank" href="https://github.com/guangsizhongbin" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
-  <title>github</title>
-  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-</svg></a>
-        
-      </div>
-    </header>
-    <main class="app-container">
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class ="post-title">Archlinux Installation</h1>
-      <div class="post-meta">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
-  <title>calendar</title>
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
-</svg>
-          Sep 21, 2020
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Xiaonan&#39;s Blog">Xiaonan&#39;s Blog</a>
         </div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
-  <title>clock</title>
-  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
-</svg>
-          3 min read
-        </div></div>
-    </header>
-    <div class="post-content">
-      <h1 id="pre-installation">Pre-installation</h1>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Xiaonan&#39;s Blog">Xiaonan&#39;s Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">Archlinux Installation</h1><div class="content" id="content"><h1 id="pre-installation">Pre-installation</h1>
 <h2 id="download">download</h2>
 <h3 id="ios">ios</h3>
-<p><a href="https://www.archlinux.org/download/">download</a></p>
+<p><a href="https://www.archlinux.org/download/" target="_blank" rel="noopener noreffer">download</a></p>
 <h3 id="copy">copy</h3>
 <ol>
 <li>sudo fdisk -l</li>
@@ -224,10 +234,24 @@ git config --global user.email guangsizhongbin@gmail.com
 <li>test connect</li>
 </ol>
 <p>ssh -T <a href="mailto:git@github.com">git@github.com</a>
-<img src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192918.png" alt=""></p>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192918.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192918.png, https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192918.png 1.5x, https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192918.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192918.png"
+        title="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192918.png" /></p>
 <ol start="4">
 <li>upload id_ras.pub to github
-<img src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192435.png" alt=""></li>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192435.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192435.png, https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192435.png 1.5x, https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192435.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192435.png"
+        title="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611192435.png" /></li>
 </ol>
 <h2 id="yay">yay</h2>
 <ol>
@@ -247,12 +271,26 @@ git config --global user.email guangsizhongbin@gmail.com
 <p>sudo pacman -S privoxy</p>
 <ul>
 <li><code>/etc/privoxy</code>
-<img src="https://img.fengqigang.cn//img/20200912185318.png" alt=""></li>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20200912185318.png"
+        data-srcset="https://img.fengqigang.cn//img/20200912185318.png, https://img.fengqigang.cn//img/20200912185318.png 1.5x, https://img.fengqigang.cn//img/20200912185318.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20200912185318.png"
+        title="https://img.fengqigang.cn//img/20200912185318.png" /></li>
 </ul>
 <h2 id="joplin">joplin</h2>
 <p>yay joplin</p>
 <h3 id="support-nvim">support nvim</h3>
-<p><img src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200618_2115_1592486139.png" alt=""></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200618_2115_1592486139.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200618_2115_1592486139.png, https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200618_2115_1592486139.png 1.5x, https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200618_2115_1592486139.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200618_2115_1592486139.png"
+        title="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200618_2115_1592486139.png" /></p>
 <h2 id="anki">anki</h2>
 <p>sudo pacman -S anki</p>
 <h3 id="add-on">add-on</h3>
@@ -279,23 +317,42 @@ systemctl enable optimus-manager.service</p>
 </ol>
 <ul>
 <li>shortcuts(<code>flameshot gui</code>)
-<img src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611_1855_1591872921.png" alt=""></li>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611_1855_1591872921.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611_1855_1591872921.png, https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611_1855_1591872921.png 1.5x, https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611_1855_1591872921.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611_1855_1591872921.png"
+        title="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611_1855_1591872921.png" /></li>
 </ul>
 <ol start="2">
 <li>
 <p>sudo pacman -S peek
-<img src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611190005.png" alt=""></p>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611190005.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611190005.png, https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611190005.png 1.5x, https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611190005.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611190005.png"
+        title="https://cdn.jsdelivr.net/gh/guangsizhongbin/picture/20200611190005.png" /></p>
 </li>
 <li>
-<p>yay picgo-appimage</p>
+<p>yay -S picgo-appimage-beta</p>
 </li>
 </ol>
-<p>LTAI4G3cxsQocwAx3TZ39t7j
-3Z3fLk4eISH8h8qY1peEVMYs2TQrM0</p>
 <ul>
 <li>xclip
 sudo pacman -S xclip
-<img src="https://img.fengqigang.cn//img/20200912184425.png" alt=""></li>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20200912184425.png"
+        data-srcset="https://img.fengqigang.cn//img/20200912184425.png, https://img.fengqigang.cn//img/20200912184425.png 1.5x, https://img.fengqigang.cn//img/20200912184425.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20200912184425.png"
+        title="https://img.fengqigang.cn//img/20200912184425.png" /></li>
 </ul>
 <h2 id="widget">widget</h2>
 <ul>
@@ -420,13 +477,23 @@ systemctl start bluetooth</p>
 <p>sudo pacman -S ark</p>
 <h2 id="drawing">drawing</h2>
 <p>sudo pacman -S KolourPaint</p>
+<h2 id="图像查看">图像查看</h2>
+<p>sudo pacman -S Gwenview</p>
+<h2 id="downloader">downloader</h2>
+<pre><code>- motrix
+</code></pre>
+<p>yay -S aur/motrix</p>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.76.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
 
-    </div>
-    <div class="post-footer">
-      
-    </div>
-  </article>
-
-    </main>
-  </body>
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

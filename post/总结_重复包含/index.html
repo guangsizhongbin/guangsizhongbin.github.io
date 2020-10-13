@@ -1,94 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <title>总结_重复包含 // Xiaonan&#39;s Blog</title>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.75.1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="fengxiaonan" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" href="https://guangsizhongbin.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
-
-    
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="总结_重复包含"/>
-<meta name="twitter:description" content="重复包含问题的解决 1. 在main.cpp中只需要包含xxx.h即可，不需要包含xxx.cpp   原因分析：
-PS: 命令中没有提到&quot;speak.h&quot;文件(原因是:在&quot;speak.cpp&quot;中已经包含了&quot;speak.h&quot;)
-  2. 在xxx.h中，需要写上, 而xxx.cpp不需要写 #ifndef xxxxx #define xxxxx (...) #endif    原因分析：
-C&#43;&#43;是采用独立编译，就是每个cpp单独编译成对应的.o文件，最后链接器再将多个.o文件链接成可执行程序。(防止同一个.o文件中包含多个相同的.h内容)
-  3. 使用&rsquo;xxx.h&rsquo;与&rsquo;xxx.cpp&rsquo;这种方式的时候，声明放在&rsquo;xxx.h&rsquo;中，定义放在&rsquo;xxx.cpp&rsquo;中   原因分析：
-C&#43;&#43;是采用独立编译，就是每个cpp单独编译成对应的.o文件，最后链接器再将多个.o文件链接成可执行程序。(在将多个.o文件链接成可执行程序的时候，有可能会在不同的.o文件中含有相同的定义)
-  参考文章 注意头文件规则，避免链接错误：重复定义(multiple defination) 编译链接 C&#43;&#43;
-Compiling Cpp"/>
-
-    <meta property="og:title" content="总结_重复包含" />
-<meta property="og:description" content="重复包含问题的解决 1. 在main.cpp中只需要包含xxx.h即可，不需要包含xxx.cpp   原因分析：
-PS: 命令中没有提到&quot;speak.h&quot;文件(原因是:在&quot;speak.cpp&quot;中已经包含了&quot;speak.h&quot;)
-  2. 在xxx.h中，需要写上, 而xxx.cpp不需要写 #ifndef xxxxx #define xxxxx (...) #endif    原因分析：
-C&#43;&#43;是采用独立编译，就是每个cpp单独编译成对应的.o文件，最后链接器再将多个.o文件链接成可执行程序。(防止同一个.o文件中包含多个相同的.h内容)
-  3. 使用&rsquo;xxx.h&rsquo;与&rsquo;xxx.cpp&rsquo;这种方式的时候，声明放在&rsquo;xxx.h&rsquo;中，定义放在&rsquo;xxx.cpp&rsquo;中   原因分析：
-C&#43;&#43;是采用独立编译，就是每个cpp单独编译成对应的.o文件，最后链接器再将多个.o文件链接成可执行程序。(在将多个.o文件链接成可执行程序的时候，有可能会在不同的.o文件中含有相同的定义)
-  参考文章 注意头文件规则，避免链接错误：重复定义(multiple defination) 编译链接 C&#43;&#43;
-Compiling Cpp" />
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>总结_重复包含 - Xiaonan&#39;s Blog</title><meta name="Description" content=""><meta property="og:title" content="总结_重复包含" />
+<meta property="og:description" content="重复包含问题的解决 1. 在main.cpp中只需要包含xxx.h即可，不需要包含xxx.cpp 原因分析： PS: 命令中没有提到&quot;speak." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://guangsizhongbin.github.io/post/%E6%80%BB%E7%BB%93_%E9%87%8D%E5%A4%8D%E5%8C%85%E5%90%AB/" />
 <meta property="article:published_time" content="2020-09-24T20:47:04+08:00" />
 <meta property="article:modified_time" content="2020-09-24T20:47:04+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="总结_重复包含"/>
+<meta name="twitter:description" content="重复包含问题的解决 1. 在main.cpp中只需要包含xxx.h即可，不需要包含xxx.cpp 原因分析： PS: 命令中没有提到&quot;speak."/>
+<meta name="application-name" content="Xiaonan&#39;s Blog">
+<meta name="apple-mobile-web-app-title" content="Xiaonan&#39;s Blog"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://guangsizhongbin.github.io/post/%E6%80%BB%E7%BB%93_%E9%87%8D%E5%A4%8D%E5%8C%85%E5%90%AB/" /><link rel="prev" href="https://guangsizhongbin.github.io/post/9-23/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "总结_重复包含",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/guangsizhongbin.github.io\/post\/%E6%80%BB%E7%BB%93_%E9%87%8D%E5%A4%8D%E5%8C%85%E5%90%AB\/"
+        },"genre": "post","wordcount":  488 ,
+        "url": "https:\/\/guangsizhongbin.github.io\/post\/%E6%80%BB%E7%BB%93_%E9%87%8D%E5%A4%8D%E5%8C%85%E5%90%AB\/","datePublished": "2020-09-24T20:47:04+08:00","dateModified": "2020-09-24T20:47:04+08:00","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
-
-  </head>
-  <body>
-    <header class="app-header">
-      <a href="https://guangsizhongbin.github.io"><img class="app-header-avatar" src="https://img.fengqigang.cn//img/-20ca465bc6ca77c1.jpg" alt="fengxiaonan" /></a>
-      <h1>Xiaonan&#39;s Blog</h1>
-      <p>KISS. Keep It Simple, Stupid</p>
-      <div class="app-header-social">
-        
-          <a target="_blank" href="https://github.com/guangsizhongbin" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
-  <title>github</title>
-  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-</svg></a>
-        
-      </div>
-    </header>
-    <main class="app-container">
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class ="post-title">总结_重复包含</h1>
-      <div class="post-meta">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
-  <title>calendar</title>
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
-</svg>
-          Sep 24, 2020
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Xiaonan&#39;s Blog">Xiaonan&#39;s Blog</a>
         </div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
-  <title>clock</title>
-  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
-</svg>
-          1 min read
-        </div></div>
-    </header>
-    <div class="post-content">
-      <h2 id="重复包含问题的解决">重复包含问题的解决</h2>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Xiaonan&#39;s Blog">Xiaonan&#39;s Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">总结_重复包含</h1><div class="content" id="content"><h2 id="重复包含问题的解决">重复包含问题的解决</h2>
 <h3 id="1-在maincpp中只需要包含xxxh即可不需要包含xxxcpp">1. 在<code>main.cpp</code>中只需要包含<code>xxx.h</code>即可，不需要包含<code>xxx.cpp</code></h3>
-<p><img src="https://img.fengqigang.cn//img/20200924211024.png" alt=""></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20200924211024.png"
+        data-srcset="https://img.fengqigang.cn//img/20200924211024.png, https://img.fengqigang.cn//img/20200924211024.png 1.5x, https://img.fengqigang.cn//img/20200924211024.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20200924211024.png"
+        title="https://img.fengqigang.cn//img/20200924211024.png" /></p>
 <ul>
 <li>
 <p>原因分析：</p>
-<p><img src="https://img.fengqigang.cn//img/20200924212457.png" alt=""></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20200924212457.png"
+        data-srcset="https://img.fengqigang.cn//img/20200924212457.png, https://img.fengqigang.cn//img/20200924212457.png 1.5x, https://img.fengqigang.cn//img/20200924212457.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20200924212457.png"
+        title="https://img.fengqigang.cn//img/20200924212457.png" /></p>
 <p>PS: 命令中没有提到&quot;speak.h&quot;文件(原因是:在&quot;speak.cpp&quot;中已经包含了&quot;speak.h&quot;)</p>
 </li>
 </ul>
 <h3 id="2-在xxxh中需要写上-而xxxcpp不需要写">2. 在<code>xxx.h</code>中，需要写上, 而<code>xxx.cpp</code>不需要写</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">#ifndef xxxxx
-</span><span style="color:#75715e">#define xxxxx
-</span><span style="color:#75715e"></span>(...)
-<span style="color:#75715e">#endif
-</span><span style="color:#75715e"></span>
+<div class="highlight"><pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#ifndef xxxxx
+</span><span class="cp">#define xxxxx
+</span><span class="cp"></span><span class="p">(...)</span>
+<span class="cp">#endif
+</span><span class="cp"></span>
 </code></pre></div><ul>
 <li>
 <p>原因分析：</p>
@@ -99,22 +111,40 @@ Compiling Cpp" />
 <ul>
 <li>
 <p>原因分析：</p>
-<p><img src="https://img.fengqigang.cn//img/20200924213451.png" alt=""></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20200924213451.png"
+        data-srcset="https://img.fengqigang.cn//img/20200924213451.png, https://img.fengqigang.cn//img/20200924213451.png 1.5x, https://img.fengqigang.cn//img/20200924213451.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20200924213451.png"
+        title="https://img.fengqigang.cn//img/20200924213451.png" /></p>
 <p>C++是采用独立编译，就是每个cpp单独编译成对应的.o文件，最后链接器再将多个.o文件链接成可执行程序。(在将多个.o文件链接成可执行程序的时候，有可能会在不同的.o文件中含有相同的定义)</p>
-<p><img src="https://img.fengqigang.cn//img/20200924214232.png" alt=""></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20200924214232.png"
+        data-srcset="https://img.fengqigang.cn//img/20200924214232.png, https://img.fengqigang.cn//img/20200924214232.png 1.5x, https://img.fengqigang.cn//img/20200924214232.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20200924214232.png"
+        title="https://img.fengqigang.cn//img/20200924214232.png" /></p>
 </li>
 </ul>
 <h2 id="参考文章">参考文章</h2>
-<p><a href="https://zybuluo.com/uuprince/note/81709">注意头文件规则，避免链接错误：重复定义(multiple defination)
+<p><a href="https://zybuluo.com/uuprince/note/81709" target="_blank" rel="noopener noreffer">注意头文件规则，避免链接错误：重复定义(multiple defination)
 编译链接 C++</a></p>
-<p><a href="https://wiki.ubuntu.org.cn/Compiling_Cpp">Compiling Cpp</a></p>
+<p><a href="https://wiki.ubuntu.org.cn/Compiling_Cpp" target="_blank" rel="noopener noreffer">Compiling Cpp</a></p>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.76.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
 
-    </div>
-    <div class="post-footer">
-      
-    </div>
-  </article>
-
-    </main>
-  </body>
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>
