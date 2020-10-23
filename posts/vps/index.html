@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Vps - xiaonan&#39;s Blog</title><meta name="Description" content=""><meta property="og:title" content="Vps" />
+<meta property="og:description" content="my vps config" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fengqigang.cn/posts/vps/" />
+<meta property="article:published_time" content="2020-10-23T11:33:32+08:00" />
+<meta property="article:modified_time" content="2020-10-23T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vps"/>
+<meta name="twitter:description" content="my vps config"/>
+<meta name="application-name" content="xiaonan&#39;s Blog">
+<meta name="apple-mobile-web-app-title" content="xiaonan&#39;s Blog"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://fengqigang.cn/posts/vps/" /><link rel="prev" href="https://fengqigang.cn/posts/pomodoro/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Vps",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/fengqigang.cn\/posts\/vps\/"
+        },"genre": "posts","keywords": "vps","wordcount":  414 ,
+        "url": "https:\/\/fengqigang.cn\/posts\/vps\/","datePublished": "2020-10-23T11:33:32+08:00","dateModified": "2020-10-23T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "xiaonan"},"author": {
+                "@type": "Person",
+                "name": "xiaonan"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="xiaonan&#39;s Blog">xiaonan&#39;s Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="xiaonan&#39;s Blog">xiaonan&#39;s Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Vps</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="fengqigang.cn" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xiaonan</a></span>&nbsp;<span class="post-category">included in <a href="/categories/vps/"><i class="far fa-folder fa-fw"></i>vps</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-10-23">2020-10-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;414 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#todo">Todo</a></li>
+    <li><a href="#system-version">system version</a></li>
+    <li><a href="#lnmp">LNMP</a>
+      <ul>
+        <li><a href="#1-安装宝塔">1. 安装宝塔</a></li>
+        <li><a href="#安装lnmp">安装LNMP</a></li>
+      </ul>
+    </li>
+    <li><a href="#trojan--bbsplus">Trojan + BBSPLUS</a>
+      <ul>
+        <li><a href="#bbrplus">BBRplus</a></li>
+        <li><a href="#trojan">Trojan</a></li>
+      </ul>
+    </li>
+    <li><a href="#docker">docker</a>
+      <ul>
+        <li><a href="#install-docker">Install docker</a>
+          <ul>
+            <li><a href="#daemon-reload">daemon-reload</a></li>
+          </ul>
+        </li>
+        <li><a href="#rsshub">rsshub</a>
+          <ul>
+            <li><a href="#download">download</a></li>
+            <li><a href="#开放端口">开放端口</a></li>
+          </ul>
+        </li>
+        <li><a href="#nextcloud">nextcloud</a>
+          <ul>
+            <li><a href="#download-1">download</a></li>
+            <li><a href="#开放端口-1">开放端口</a></li>
+            <li><a href="#with-dolphincreate-a-permanent-linknextcloud">with Dolphin(Create a permanent link)</a></li>
+            <li><a href="#with-joplinjoplin">with Joplin</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>my vps config</p>
+<h2 id="todo">Todo</h2>
+<ul>
+<li><i class="far fa-check-square fa-fw"></i> LNMP</li>
+<li><i class="far fa-check-square fa-fw"></i> trojan + BBRplus</li>
+<li><i class="far fa-square fa-fw"></i> docker
+<ul>
+<li><i class="far fa-check-square fa-fw"></i> docker ce</li>
+<li><i class="far fa-check-square fa-fw"></i> rsshub</li>
+<li><i class="far fa-square fa-fw"></i> tinytinyrss</li>
+<li><i class="far fa-square fa-fw"></i> MarkdownToAnki</li>
+<li><i class="far fa-square fa-fw"></i> EnglishBoard</li>
+<li><i class="far fa-check-square fa-fw"></i> Nextcloud</li>
+</ul>
+</li>
+</ul>
+<h2 id="system-version">system version</h2>
+<p>当前操作系统发行版本</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@vultrguest ~<span class="o">]</span><span class="c1"># cat /etc/redhat-release </span>
+CentOS Linux release 8.2.2004 <span class="o">(</span>Core<span class="o">)</span> 
+</code></pre></td></tr></table>
+</div>
+</div><p>当前操作系统内核信息</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@vultrguest ~<span class="o">]</span><span class="c1"># uname -a</span>
+Linux vultrguest 4.18.0-193.19.1.el8_2.x86_64 <span class="c1">#1 SMP Mon Sep 14 14:37:00 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="lnmp">LNMP</h2>
+<h3 id="1-安装宝塔">1. 安装宝塔</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="安装lnmp">安装LNMP</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20201023130753.png"
+        data-srcset="https://img.fengqigang.cn//img/20201023130753.png, https://img.fengqigang.cn//img/20201023130753.png 1.5x, https://img.fengqigang.cn//img/20201023130753.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20201023130753.png"
+        title="https://img.fengqigang.cn//img/20201023130753.png" /></p>
+<h2 id="trojan--bbsplus">Trojan + BBSPLUS</h2>
+<h3 id="bbrplus">BBRplus</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">bash &lt;(curl -s -L https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh)
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="trojan">Trojan</h3>
+<ol>
+<li>Install</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">wget -N --no-check-certificate -q -O trojan-quickstart.sh <span class="s2">&#34;https://raw.githubusercontent.com/trojan-gfw/trojan-quickstart/master/trojan-quickstart.sh&#34;</span> <span class="o">&amp;&amp;</span> chmod +x trojan-quickstart.sh <span class="o">&amp;&amp;</span> bash trojan-quickstart.sh
+</code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>config</li>
+</ol>
+<p><code>/usr/local/etc/trojan/config.json</code></p>
+<ol start="3">
+<li>放行443端口</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20201023141248.png"
+        data-srcset="https://img.fengqigang.cn//img/20201023141248.png, https://img.fengqigang.cn//img/20201023141248.png 1.5x, https://img.fengqigang.cn//img/20201023141248.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20201023141248.png"
+        title="https://img.fengqigang.cn//img/20201023141248.png" /></p>
+<ol start="4">
+<li>启动+开机启动</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl <span class="nb">enable</span> trojan
+systemctl start trojan
+
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="docker">docker</h2>
+<h3 id="install-docker">Install docker</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">
+wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.2.13-3.1.el7.x86_64.rpm
+
+yum -y install ./containerd.io-1.2.13-3.1.el7.x86_64.rpm
+
+yum install docker-ce docker-ce-cli
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="daemon-reload">daemon-reload</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl daemon-reload
+systemctl restart docker.service
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="rsshub">rsshub</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20201023142458.png"
+        data-srcset="https://img.fengqigang.cn//img/20201023142458.png, https://img.fengqigang.cn//img/20201023142458.png 1.5x, https://img.fengqigang.cn//img/20201023142458.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20201023142458.png"
+        title="https://img.fengqigang.cn//img/20201023142458.png" /></p>
+<h4 id="download">download</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker pull diygod/rsshub
+docker run -d --name rsshub -p 1200:1200 diygod/rsshub
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="开放端口">开放端口</h4>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20201023142549.png"
+        data-srcset="https://img.fengqigang.cn//img/20201023142549.png, https://img.fengqigang.cn//img/20201023142549.png 1.5x, https://img.fengqigang.cn//img/20201023142549.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20201023142549.png"
+        title="https://img.fengqigang.cn//img/20201023142549.png" /></p>
+<h3 id="nextcloud">nextcloud</h3>
+<h4 id="download-1">download</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker run -d -p 8080:80 nextcloud
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="开放端口-1">开放端口</h4>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20201023150620.png"
+        data-srcset="https://img.fengqigang.cn//img/20201023150620.png, https://img.fengqigang.cn//img/20201023150620.png 1.5x, https://img.fengqigang.cn//img/20201023150620.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20201023150620.png"
+        title="https://img.fengqigang.cn//img/20201023150620.png" /></p>
+<h4 id="with-dolphincreate-a-permanent-linknextcloud">with Dolphin(Create a permanent link)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h4>
+<ol>
+<li>
+<p>Open Dolphin and click &ldquo;Network&rdquo; in the left hand &ldquo;Places&rdquo; column.</p>
+</li>
+<li>
+<p>Click on the icon labeled <code>Add a Network Folder.</code> The resulting dialog should appear with WebDAV selected.</p>
+</li>
+<li>
+<p>if WebDAV is not selected, select it.</p>
+</li>
+<li>
+<p>Click Next.</p>
+</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20201023173813.png"
+        data-srcset="https://img.fengqigang.cn//img/20201023173813.png, https://img.fengqigang.cn//img/20201023173813.png 1.5x, https://img.fengqigang.cn//img/20201023173813.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20201023173813.png"
+        title="https://img.fengqigang.cn//img/20201023173813.png" /></p>
+<ol start="5">
+<li>Enter the following settings:</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20201023174118.png"
+        data-srcset="https://img.fengqigang.cn//img/20201023174118.png, https://img.fengqigang.cn//img/20201023174118.png 1.5x, https://img.fengqigang.cn//img/20201023174118.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20201023174118.png"
+        title="https://img.fengqigang.cn//img/20201023174118.png" /></p>
+<ul>
+<li>
+<p>Name: The name you want to see in the Places bookmark, for example Nextcloud.</p>
+</li>
+<li>
+<p>User: The Nextcloud username you used to log in, for example admin.</p>
+</li>
+<li>
+<p>Server: The Nextcloud domain name, for example ip</p>
+</li>
+<li>
+<p>Folder - Enter the path(without <code>http://ip</code> before)</p>
+</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20201023174526.png"
+        data-srcset="https://img.fengqigang.cn//img/20201023174526.png, https://img.fengqigang.cn//img/20201023174526.png 1.5x, https://img.fengqigang.cn//img/20201023174526.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20201023174526.png"
+        title="https://img.fengqigang.cn//img/20201023174526.png" /></p>
+<h4 id="with-joplinjoplin">with Joplin<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></h4>
+<blockquote>
+<p>When changing the WebDAV URL, make sure that the new location has the same exact content as the old location (i.e. copy all the Joplin data over to the new location). Otherwise, if there&rsquo;s nothing on the new location, Joplin is going to think that you have deleted all your data and will proceed to delete it locally too.</p>
+</blockquote>
+<ol>
+<li>Make a backup of Joplin data in case something goes wrong. Export to a JEX archive for example.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20201023175402.png"
+        data-srcset="https://img.fengqigang.cn//img/20201023175402.png, https://img.fengqigang.cn//img/20201023175402.png 1.5x, https://img.fengqigang.cn//img/20201023175402.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20201023175402.png"
+        title="https://img.fengqigang.cn//img/20201023175402.png" /></p>
+<ol start="2">
+<li>
+<p>Synchronise one last time all your data from a Joplin client.</p>
+</li>
+<li>
+<p>Close the Joplin client.</p>
+</li>
+<li>
+<p>On your WebDAV service, copy all the Joplin files from the old location to the new one. Make sure to also copy the <code>.resource</code> directory as it contains your images and other attachments.</p>
+</li>
+<li>
+<p>Once it&rsquo;s done, open Joplin again and change the WebDAV URL.</p>
+</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.fengqigang.cn//img/20201023180210.png"
+        data-srcset="https://img.fengqigang.cn//img/20201023180210.png, https://img.fengqigang.cn//img/20201023180210.png 1.5x, https://img.fengqigang.cn//img/20201023180210.png 2x"
+        data-sizes="auto"
+        alt="https://img.fengqigang.cn//img/20201023180210.png"
+        title="https://img.fengqigang.cn//img/20201023180210.png" /></p>
+<ol start="6">
+<li>
+<p>Synchronise to verify that everyging is working.</p>
+</li>
+<li>
+<p>Do step 5 and 6 for all the other Joplin clients you need to sync.</p>
+</li>
+</ol>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://docs.nextcloud.com/server/20/user_manual/en/files/access_webdav.html" target="_blank" rel="noopener noreffer">docs.nextcloud</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="https://joplinapp.org/faq/" target="_blank" rel="noopener noreffer">Joplin faq</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2020-10-23</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/vps/">vps</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/pomodoro/" class="prev" rel="prev" title="Pomodoro"><i class="fas fa-angle-left fa-fw"></i>Pomodoro</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.76.5">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="fengqigang.cn" target="_blank">fengxiaonan</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

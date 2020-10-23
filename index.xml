@@ -4,9 +4,16 @@
         <link>https://fengqigang.cn/</link>
         <description>xiaonan&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gaungsizhongbin@gmail.com (fengxiaonan)</managingEditor>
-            <webMaster>gaungsizhongbin@gmail.com (fengxiaonan)</webMaster><lastBuildDate>Wed, 14 Oct 2020 16:52:57 &#43;0800</lastBuildDate>
+            <webMaster>gaungsizhongbin@gmail.com (fengxiaonan)</webMaster><lastBuildDate>Fri, 23 Oct 2020 11:33:32 &#43;0800</lastBuildDate>
             <atom:link href="https://fengqigang.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Vps</title>
+    <link>https://fengqigang.cn/posts/vps/</link>
+    <pubDate>Fri, 23 Oct 2020 11:33:32 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://fengqigang.cn/posts/vps/</guid>
+    <description><![CDATA[<p>my vps config</p>]]></description>
+</item><item>
     <title>Pomodoro</title>
     <link>https://fengqigang.cn/posts/pomodoro/</link>
     <pubDate>Wed, 14 Oct 2020 16:52:57 &#43;0800</pubDate>

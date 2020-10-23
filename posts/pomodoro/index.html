@@ -17,7 +17,7 @@
 <meta name="application-name" content="xiaonan&#39;s Blog">
 <meta name="apple-mobile-web-app-title" content="xiaonan&#39;s Blog"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://fengqigang.cn/posts/pomodoro/" /><link rel="prev" href="https://fengqigang.cn/posts/hugo/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://fengqigang.cn/posts/pomodoro/" /><link rel="prev" href="https://fengqigang.cn/posts/hugo/" /><link rel="next" href="https://fengqigang.cn/posts/vps/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -26,7 +26,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/fengqigang.cn\/posts\/pomodoro\/"
-        },"genre": "posts","keywords": "tricks","wordcount":  155 ,
+        },"genre": "posts","keywords": "tricks","wordcount":  191 ,
         "url": "https:\/\/fengqigang.cn\/posts\/pomodoro\/","datePublished": "2020-10-14T16:52:57+08:00","dateModified": "2020-10-14T00:00:00+00:00","publisher": {
             "@type": "Organization",
             "name": "xiaonan"},"author": {
@@ -103,7 +103,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Pomodoro</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="fengqigang.cn" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xiaonan</a></span>&nbsp;<span class="post-category">included in <a href="/categories/archlinux/"><i class="far fa-folder fa-fw"></i>Archlinux</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-10-14">2020-10-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;155 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-10-14">2020-10-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;191 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -130,7 +130,7 @@
 <p>The Pomodoro technique was invented in the early 1990s by the developer and author Francesco Cirillo.The method is named &ldquo;Pomodoro&rdquo; after the tomato-shaped timer Cirilo used to track his work as a university student.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 <h2 id="the-pomodoro-technique-core-processcore">The Pomodoro Technique Core Process<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></h2>
 <ol>
-<li>Choose a taks you&rsquo;d like to get done.</li>
+<li>Choose a tasks you&rsquo;d like to get done.</li>
 <li>Set the Pomodoro for 25 minutes.</li>
 <li>Work on the task until the Pomodoro rings.</li>
 <li>When the Pomodoro rings, put a check mark on a paper.</li>
@@ -139,18 +139,54 @@
 <h2 id="the-pomodoro-timer-by-shell">The Pomodoro timer by shell</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
-</span><span class="cp"></span>sleep <span class="m">1500</span> <span class="o">&amp;&amp;</span> notify-send break<span class="p">;</span> sleep <span class="m">300</span> notify-send <span class="s2">&#34;back to work&#34;</span>
-sleep <span class="m">1500</span> <span class="o">&amp;&amp;</span> notify-send break<span class="p">;</span> sleep <span class="m">300</span> notify-send <span class="s2">&#34;back to work&#34;</span>
-sleep <span class="m">1500</span> <span class="o">&amp;&amp;</span> notify-send break<span class="p">;</span> sleep <span class="m">300</span> notify-send <span class="s2">&#34;back to work&#34;</span>
-sleep <span class="m">1500</span> <span class="o">&amp;&amp;</span> notify-send break<span class="p">;</span> sleep <span class="m">900</span> notify-send <span class="s2">&#34;back to work&#34;</span>
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"> <span class="c1">#!/bin/bash</span>
+
+pomodorotime<span class="o">(){</span>
+    notify-send <span class="s2">&#34;Time to Work&#34;</span> <span class="s2">&#34;Focus&#34;</span> -u normal -a <span class="s1">&#39;Pomodoro&#39;</span> -i <span class="nv">$HOME</span>/Documents/work.png
+   cvlc --play-and-exit --audio <span class="nv">$HOME</span>/Music/CloudMusic/study.mp3
+<span class="o">}</span>
+
+shortbreaktime<span class="o">(){</span>
+    notify-send <span class="s2">&#34;Short Break Time&#34;</span> -u critical -a <span class="s1">&#39;Pomodoro&#39;</span> -i <span class="nv">$HOME</span>/Documents/break.png
+   cvlc --play-and-exit <span class="nv">$HOME</span>/Music/CloudMusic/short_breaktime.mp3
+<span class="o">}</span>
+
+longbreaktime<span class="o">(){</span>
+    notify-send <span class="s2">&#34;Long Break Time&#34;</span> -u critical -a <span class="s1">&#39;Pomodoro&#39;</span> -i <span class="nv">$HOME</span>/Documents/break.png
+   cvlc --play-and-exit <span class="nv">$HOME</span>/Music/CloudMusic/long_breaktime.mp3
+<span class="o">}</span>
+
+pomodorotime
+sleep <span class="m">1800</span> <span class="o">&amp;&amp;</span> shortbreaktime
+pomodorotime
+sleep <span class="m">1800</span> <span class="o">&amp;&amp;</span> shortbreaktime
+pomodorotime
+sleep <span class="m">1800</span> <span class="o">&amp;&amp;</span> longbreaktime
 </code></pre></td></tr></table>
 </div>
 </div><section class="footnotes" role="doc-endnotes">
@@ -186,11 +222,12 @@ sleep <span class="m">1500</span> <span class="o">&amp;&amp;</span> notify-send 
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/hugo/" class="prev" rel="prev" title="Hugo"><i class="fas fa-angle-left fa-fw"></i>Hugo</a></div>
+    <div class="post-nav"><a href="/posts/hugo/" class="prev" rel="prev" title="Hugo"><i class="fas fa-angle-left fa-fw"></i>Hugo</a>
+            <a href="/posts/vps/" class="next" rel="next" title="Vps">Vps<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.76.4">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.76.5">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="fengqigang.cn" target="_blank">fengxiaonan</a></span></div>
         </div>
     </footer></div>

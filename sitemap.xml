@@ -2,13 +2,16 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://fengqigang.cn/categories/</loc><lastmod>2020-10-23T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/posts/</loc><lastmod>2020-10-23T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/tags/</loc><lastmod>2020-10-23T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/posts/vps/</loc><lastmod>2020-10-23T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/tags/vps/</loc><lastmod>2020-10-23T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/categories/vps/</loc><lastmod>2020-10-23T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/</loc><lastmod>2020-10-23T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://fengqigang.cn/categories/archlinux/</loc><lastmod>2020-10-14T00:00:00&#43;00:00</lastmod></url><url>
-            <loc>https://fengqigang.cn/categories/</loc><lastmod>2020-10-14T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://fengqigang.cn/posts/pomodoro/</loc><lastmod>2020-10-14T00:00:00&#43;00:00</lastmod></url><url>
-            <loc>https://fengqigang.cn/posts/</loc><lastmod>2020-10-14T00:00:00&#43;00:00</lastmod></url><url>
-            <loc>https://fengqigang.cn/tags/</loc><lastmod>2020-10-14T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://fengqigang.cn/tags/tricks/</loc><lastmod>2020-10-14T00:00:00&#43;00:00</lastmod></url><url>
-            <loc>https://fengqigang.cn/</loc><lastmod>2020-10-14T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://fengqigang.cn/posts/hugo/</loc><lastmod>2020-10-13T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://fengqigang.cn/tags/hugo/</loc><lastmod>2020-10-13T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://fengqigang.cn/categories/installation/</loc><lastmod>2020-10-13T00:00:00&#43;00:00</lastmod></url><url>
