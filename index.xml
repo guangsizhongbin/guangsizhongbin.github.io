@@ -4,9 +4,29 @@
         <link>https://fengqigang.cn/</link>
         <description>xiaonan&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gaungsizhongbin@gmail.com (fengxiaonan)</managingEditor>
-            <webMaster>gaungsizhongbin@gmail.com (fengxiaonan)</webMaster><lastBuildDate>Fri, 23 Oct 2020 11:33:32 &#43;0800</lastBuildDate>
+            <webMaster>gaungsizhongbin@gmail.com (fengxiaonan)</webMaster><lastBuildDate>Fri, 30 Oct 2020 20:51:45 &#43;0800</lastBuildDate>
             <atom:link href="https://fengqigang.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Linear_list</title>
+    <link>https://fengqigang.cn/posts/linear_list/</link>
+    <pubDate>Fri, 30 Oct 2020 20:51:45 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://fengqigang.cn/posts/linear_list/</guid>
+    <description><![CDATA[顺序表代码实现  #define 与 typedef 的区别: 1   #define OK 1
+当使用OK的时候会替换成1
+#define 归预处理器管
+  typedef int Status 定义int 为Status类型
+typedef 归编译器管
+     命名规范：
+  SqList 这样的两个单词的合并，首字母要大写, 如ElemType, GetElem, ListDelete
+  使用#define后全要大写, 如#define TRUE 1
+    . 与 -&gt; 使用
+  当传递的是数组本身的时候用.
+  当传递的是指针的时候用-&gt;
+    定义SqList思路
+  ElemType 类型的 data[MAXSIZE]数组
+  必须确定当前的线性表的长度 int length]]></description>
+</item><item>
     <title>Vps</title>
     <link>https://fengqigang.cn/posts/vps/</link>
     <pubDate>Fri, 23 Oct 2020 11:33:32 &#43;0800</pubDate>

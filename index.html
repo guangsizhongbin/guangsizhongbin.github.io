@@ -10,7 +10,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://fengqigang.cn/" />
-<meta property="og:updated_time" content="2020-10-23T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-10-30T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="xiaonan&#39;s Blog"/>
 <meta name="twitter:description" content=""/>
@@ -99,7 +99,25 @@
         data-sizes="auto"
         alt="/images/avatar.png"
         title="/images/avatar.png" /></a></div><h1 class="home-title">Xiaonan's Blog</h1><div class="links"><a href="https://github.com/guangsizhongbin" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:guangsizhongbin@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
-<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/linear_list/">Linear_list</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="fengqigang.cn" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xiaonan</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-10-30">2020-10-30</time></span>&nbsp;<span class="post-category">included in <a href="/categories/datastructure/"><i class="far fa-folder fa-fw"></i>datastructure</a></span></div><div class="content">顺序表代码实现  #define 与 typedef 的区别: 1   #define OK 1
+当使用OK的时候会替换成1
+#define 归预处理器管
+  typedef int Status 定义int 为Status类型
+typedef 归编译器管
+     命名规范：
+  SqList 这样的两个单词的合并，首字母要大写, 如ElemType, GetElem, ListDelete
+  使用#define后全要大写, 如#define TRUE 1
+    . 与 -&gt; 使用
+  当传递的是数组本身的时候用.
+  当传递的是指针的时候用-&gt;
+    定义SqList思路
+  ElemType 类型的 data[MAXSIZE]数组
+  必须确定当前的线性表的长度 int length</div><div class="post-footer">
+        <a href="/posts/linear_list/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/list/">list</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/vps/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
