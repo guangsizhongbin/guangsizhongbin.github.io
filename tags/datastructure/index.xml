@@ -1,0 +1,32 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>datastructure - Tag - xiaonan&#39;s Blog</title>
+        <link>https://fengqigang.cn/tags/datastructure/</link>
+        <description>datastructure - Tag - xiaonan&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gaungsizhongbin@gmail.com (fengxiaonan)</managingEditor>
+            <webMaster>gaungsizhongbin@gmail.com (fengxiaonan)</webMaster><lastBuildDate>Sat, 31 Oct 2020 22:07:50 &#43;0800</lastBuildDate><atom:link href="https://fengqigang.cn/tags/datastructure/" rel="self" type="application/rss+xml" /><item>
+    <title>LinkList</title>
+    <link>https://fengqigang.cn/posts/linklist/</link>
+    <pubDate>Sat, 31 Oct 2020 22:07:50 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://fengqigang.cn/posts/linklist/</guid>
+    <description><![CDATA[链表代码实现 命名规范 Node
+LinkList
+GetElem
+ListInsert
+ListDelete
+CreateListHead
+CreateListTail
+ClearList
+TravelList
+结点创建思路 创建单链表的思路  头插入法    srand
+ 头文件  srand (time(0))    rand
+ 头文件  生成1-100的整数 rand()%100 + 1    尾插入法  除了头结点外，还需要一个结点来记当前尾结点在哪里
+查找某个元素的值的思路   从第一个结点开始，只有当前结点不为空并且还没到第i个结点，就继续
+  若到达链尾或i值不正确，报错
+  否则查找成功，返回结点p的数据
+  链表插入某个值的思路   找到
+  插入
+  ]]></description>
+</item></channel>
+</rss>

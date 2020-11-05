@@ -17,7 +17,7 @@
 <meta name="application-name" content="xiaonan&#39;s Blog">
 <meta name="apple-mobile-web-app-title" content="xiaonan&#39;s Blog"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://fengqigang.cn/posts/neovim/" /><link rel="prev" href="https://fengqigang.cn/posts/linear_list/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://fengqigang.cn/posts/neovim/" /><link rel="prev" href="https://fengqigang.cn/posts/linear_list/" /><link rel="next" href="https://fengqigang.cn/posts/linklist/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -26,7 +26,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/fengqigang.cn\/posts\/neovim\/"
-        },"genre": "posts","keywords": "tool","wordcount":  136 ,
+        },"genre": "posts","keywords": "tool","wordcount":  138 ,
         "url": "https:\/\/fengqigang.cn\/posts\/neovim\/","datePublished": "2020-10-31T19:00:52+08:00","dateModified": "2020-10-31T00:00:00+00:00","publisher": {
             "@type": "Organization",
             "name": "xiaonan"},"author": {
@@ -103,7 +103,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Neovim</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="fengqigang.cn" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xiaonan</a></span>&nbsp;<span class="post-category">included in <a href="/categories/archlinux/"><i class="far fa-folder fa-fw"></i>archlinux</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-10-31">2020-10-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;136 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-10-31">2020-10-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;138 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -114,7 +114,7 @@
   <ul>
     <li><a href="#plugins">Plugins</a>
       <ul>
-        <li><a href="#coc-picgo">coc-picgo</a>
+        <li><a href="#coc-picgococ-picgo">coc-picgo</a>
           <ul>
             <li><a href="#insatll">Insatll</a></li>
             <li><a href="#usage">Usage</a></li>
@@ -126,7 +126,7 @@
 </nav></div>
             </div><div class="content" id="content"><p>Neovim 是我最喜欢的编辑器</p>
 <h2 id="plugins">Plugins</h2>
-<h3 id="coc-picgo">coc-picgo</h3>
+<h3 id="coc-picgococ-picgo">coc-picgo<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h3>
 <h4 id="insatll">Insatll</h4>
 <p><code>:CocInstall coc-pigo</code></p>
 <h4 id="usage">Usage</h4>
@@ -250,7 +250,14 @@
 <pre class="chroma"><code class="language-vim" data-lang="vim"><span class="nx">noremap</span> <span class="p">&lt;</span><span class="nx">leader</span><span class="p">&gt;</span><span class="nx">g</span> :<span class="nx">CocCommand</span> <span class="nx">picgo</span>.<span class="nx">uploadImageFromClipboard</span><span class="p">&lt;</span><span class="nx">CR</span><span class="p">&gt;</span><span class="err">
 </span></code></pre></td></tr></table>
 </div>
-</div></div><div class="post-footer" id="post-footer">
+</div><section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://github.com/PLDaily/coc-picgo" target="_blank" rel="noopener noreffer">coc-picgo</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
@@ -273,11 +280,12 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/linear_list/" class="prev" rel="prev" title="Linear_list"><i class="fas fa-angle-left fa-fw"></i>Linear_list</a></div>
+    <div class="post-nav"><a href="/posts/linear_list/" class="prev" rel="prev" title="Linear_list"><i class="fas fa-angle-left fa-fw"></i>Linear_list</a>
+            <a href="/posts/linklist/" class="next" rel="next" title="LinkList">LinkList<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.76.5">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.77.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="fengqigang.cn" target="_blank">fengxiaonan</a></span></div>
         </div>
     </footer></div>

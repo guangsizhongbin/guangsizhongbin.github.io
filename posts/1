@@ -1,0 +1,30 @@
+---
+title: "LinkList"
+date: 2020-10-31T22:07:50+08:00
+lastmod: 2020-10-31
+author: "xiaonan"
+
+tags: [datastructure]
+categories: [datastructure]
+featuredIamge: ""
+featuredImagePreview: ""
+---
+
+## 链表代码实现
+
+### 命名规范
+
+Node
+LinkList
+GetElem
+ListInsert
+ListDelete
+CreateListHead
+CreateListTail
+ClearList
+TravelList
+
+### 结点创建思路
+
+
+

@@ -2,14 +2,18 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://fengqigang.cn/categories/archlinux/</loc><lastmod>2020-10-31T00:00:00&#43;00:00</lastmod></url><url>
-            <loc>https://fengqigang.cn/categories/</loc><lastmod>2020-10-31T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/categories/archlinux/</loc><lastmod>2020-11-05T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/categories/</loc><lastmod>2020-11-05T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/posts/cron/</loc><lastmod>2020-11-05T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/posts/</loc><lastmod>2020-11-05T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/tags/</loc><lastmod>2020-11-05T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/tags/trick/</loc><lastmod>2020-11-05T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/</loc><lastmod>2020-11-05T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/tags/datastructure/</loc><lastmod>2020-10-31T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/categories/datastructure/</loc><lastmod>2020-10-31T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://fengqigang.cn/posts/linklist/</loc><lastmod>2020-10-31T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://fengqigang.cn/posts/neovim/</loc><lastmod>2020-10-31T00:00:00&#43;00:00</lastmod></url><url>
-            <loc>https://fengqigang.cn/posts/</loc><lastmod>2020-10-31T00:00:00&#43;00:00</lastmod></url><url>
-            <loc>https://fengqigang.cn/tags/</loc><lastmod>2020-10-31T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://fengqigang.cn/tags/tool/</loc><lastmod>2020-10-31T00:00:00&#43;00:00</lastmod></url><url>
-            <loc>https://fengqigang.cn/</loc><lastmod>2020-10-31T00:00:00&#43;00:00</lastmod></url><url>
-            <loc>https://fengqigang.cn/categories/datastructure/</loc><lastmod>2020-10-30T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://fengqigang.cn/posts/linear_list/</loc><lastmod>2020-10-30T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://fengqigang.cn/tags/list/</loc><lastmod>2020-10-30T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://fengqigang.cn/posts/vps/</loc><lastmod>2020-10-23T00:00:00&#43;00:00</lastmod></url><url>
